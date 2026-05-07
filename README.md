@@ -10,6 +10,8 @@
 | [docs/api-reference.md](docs/api-reference.md) | Справочник по эндпоинтам API |
 | [docs/cspl.md](docs/cspl.md) | CSPL / fython: `$extens`, `include`, структура экспертов |
 | [docs/concept-examples.md](docs/concept-examples.md) | Как устроены **концепты** в Extella и примеры текстов |
+| [docs/templates-extella-expert-and-concept.md](docs/templates-extella-expert-and-concept.md) | Шаблоны **эксперта** и **концепта**: `save_expert`, примеры кода, типичные ошибки, отличие Expert vs Concept |
+| [docs/examples/fython-telegram-expert.md](docs/examples/fython-telegram-expert.md) | Готовый пример **fython**-эксперта (Telegram) + JSON для `expert/save` и правила формата |
 | [docs/examples/nohup-expert-example.md](docs/examples/nohup-expert-example.md) | Пример **nohup**-эксперта (скрипт верхнего уровня, `{{placeholder}}`) |
 
 ### Концепты пресета планировки (пример из `plan-creation-preset`)
