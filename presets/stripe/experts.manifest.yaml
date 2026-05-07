@@ -1,0 +1,12 @@
+connector_id: stripe
+
+experts:
+  - name: connector_stripe_healthcheck
+    description: >
+      Verifies Stripe secret key via GET /v1/balance. Parameters: connector_stripe_secret_key from KV.
+      Returns status success with livemode flag or error.
+    cspl: fython
+    kwargs:
+      connector_stripe_secret_key: ""
+    dependencies:
+      - requests

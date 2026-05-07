@@ -1,0 +1,12 @@
+connector_id: github
+
+experts:
+  - name: connector_github_healthcheck
+    description: >
+      Verifies GitHub PAT. Parameters: connector_github_pat — token from KV.
+      Calls GET https://api.github.com/user. Returns status success with login or error.
+    cspl: fython
+    kwargs:
+      connector_github_pat: ""
+    dependencies:
+      - requests

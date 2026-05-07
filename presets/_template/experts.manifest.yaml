@@ -1,0 +1,19 @@
+# Планируемые эксперты Extella (fython). Имена в snake_case.
+# Публикация: POST /api/expert/save с полями name, description, code, kwargs, cspl.
+
+connector_id: template
+
+experts:
+  - name: connector_template_healthcheck
+    description: >
+      Verifies Template connector credentials. Parameters: example_secret — API key from KV.
+      Returns status success or error message from provider.
+    cspl: fython
+    kwargs:
+      example_secret: ""
+    dependencies:
+      - requests
+
+  # - name: connector_template_list_resources
+  #   description: ...
+  #   kwargs: {}

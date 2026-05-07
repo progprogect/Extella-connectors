@@ -1,0 +1,24 @@
+{
+  "connector_id": "stripe",
+  "version": 1,
+  "keys": [
+    {
+      "name": "connector_stripe_secret_key",
+      "required": true,
+      "sensitive": true,
+      "kind": "api_secret",
+      "kv_description": "Stripe secret or restricted API key for Extella connector.",
+      "rotation_hint": "Roll key in Stripe Dashboard; kv/set new value.",
+      "example_format": "sk_test_... | sk_live_... | rk_live_..."
+    },
+    {
+      "name": "connector_stripe_webhook_secret",
+      "required": false,
+      "sensitive": true,
+      "kind": "webhook_secret",
+      "kv_description": "Stripe webhook signing secret for verifying Stripe-Signature.",
+      "rotation_hint": "Rotate in Webhooks endpoint settings if leaked.",
+      "example_format": "whsec_..."
+    }
+  ]
+}

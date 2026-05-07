@@ -1,0 +1,16 @@
+{
+  "$comment": "Схема ключей Extella KV для коннектора. Секреты не коммитить.",
+  "connector_id": "template",
+  "version": 1,
+  "keys": [
+    {
+      "name": "connector_template_example_secret",
+      "required": true,
+      "sensitive": true,
+      "kind": "api_key",
+      "kv_description": "Template connector example credential; replace in real preset.",
+      "rotation_hint": "Rotate at provider console; update via kv/set.",
+      "example_format": "string"
+    }
+  ]
+}

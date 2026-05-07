@@ -1,0 +1,15 @@
+{
+  "connector_id": "github",
+  "version": 1,
+  "keys": [
+    {
+      "name": "connector_github_pat",
+      "required": true,
+      "sensitive": true,
+      "kind": "pat",
+      "kv_description": "GitHub personal access token for API connector; rotate in GitHub developer settings.",
+      "rotation_hint": "Revoke old token on GitHub; kv/set new value.",
+      "example_format": "github_pat_... или ghp_..."
+    }
+  ]
+}

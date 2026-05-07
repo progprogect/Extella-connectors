@@ -23,6 +23,15 @@
 
 Исходный проект с кодом экспертов остаётся в репозитории **plan-creation-preset**; здесь — база знаний и точка входа для дальнейшей работы с GitHub.
 
+## Мини-пресеты коннекторов (`presets/`)
+
+- [presets/README.md](presets/README.md) — структура мини-пресетов
+- Шаблон: [presets/_template/](presets/_template/)
+- Эталоны: [presets/github/](presets/github/) (PAT + healthcheck), [presets/stripe/](presets/stripe/) (secret key + webhook KV)
+- [docs/provider-matrix.md](docs/provider-matrix.md) — матрица 21 сервиса
+- [docs/oauth-broker.md](docs/oauth-broker.md) — OAuth-брокер и fallback
+- [docs/connector-security.md](docs/connector-security.md) — безопасность (KV, SSRF, Stripe)
+
 ## Безопасность
 
 Не коммитьте `.env`, API-ключи и токены. Используйте KV в Extella или локальные секреты вне репозитория.
